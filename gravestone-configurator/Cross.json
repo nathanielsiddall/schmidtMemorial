@@ -1,0 +1,70 @@
+[
+  {
+    "command": "moveTo",
+    "x": 387.37,
+    "y": 228.54
+  },
+  {
+    "command": "lineTo",
+    "x": -108.15,
+    "y": 228.54
+  },
+  {
+    "command": "lineTo",
+    "x": -108.15,
+    "y": -50.89
+  },
+  {
+    "command": "lineTo",
+    "x": 107.94,
+    "y": -50.89
+  },
+  {
+    "command": "lineTo",
+    "x": 107.94,
+    "y": 62.69
+  },
+  {
+    "command": "lineTo",
+    "x": 53.34,
+    "y": 62.69
+  },
+  {
+    "command": "lineTo",
+    "x": 53.34,
+    "y": 114.84
+  },
+  {
+    "command": "lineTo",
+    "x": 108.1,
+    "y": 114.84
+  },
+  {
+    "command": "lineTo",
+    "x": 108.1,
+    "y": 50.94
+  },
+  {
+    "command": "lineTo",
+    "x": -107.81,
+    "y": 50.94
+  },
+  {
+    "command": "lineTo",
+    "x": -107.81,
+    "y": 327.37
+  },
+  {
+    "command": "lineTo",
+    "x": -53.42,
+    "y": 327.37
+  },
+  {
+    "command": "lineTo",
+    "x": -53.42,
+    "y": 228.54
+  },
+  {
+    "command": "closePath"
+  }
+]

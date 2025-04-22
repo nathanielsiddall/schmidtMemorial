@@ -1,0 +1,44 @@
+{
+  "canvasBackground": "/images/background.jpg",
+  "designs": [
+        {
+      "id": "old school",
+      "svgPath": "M40,80 Q100,20 160,80 L160,280 L40,280 Z",
+      "svgProps": { "x": 100, "y": 100, "scale": 1 },
+      "graniteOptions": [
+         "graniteColors/graniteColorOne.jpg",
+         "graniteColors/graniteoption2.jpg",
+         "graniteColors/marble113.jpg"
+      ],
+      "selectedGranite": "graniteColors/graniteColorOne.jpg",
+      "tileScale": 0.2
+    },
+    {
+      "id": "classic",
+      "memorialText": "In Loving Memory",
+      "textProps": { "x": 100, "y": 100, "fontSize": 24 },
+      "svgPath": "M387.37,228.54h-108.15v-50.89h107.94V62.69h53.34v114.84h108.1v50.94h-107.81v327.37h-53.42V228.54Z",
+      "svgProps": { "x": 100, "y": 100, "scale": 1 },
+      "graniteOptions": [
+         "graniteColors/graniteColorOne.jpg",
+         "graniteColors/graniteoption2.jpg",
+         "graniteColors/marble113.jpg"
+      ],
+      "selectedGranite": "graniteColors/graniteColorOne.jpg",
+      "tileScale": 0.5
+    },
+    {
+      "id": "modern",
+      "memorialText": "Forever Remembered",
+      "textProps": { "x": 120, "y": 120, "fontSize": 26 },
+      "svgPath": "M250,100 L350,100 L400,200 L350,300 L250,300 L200,200 Z",
+      "svgProps": { "x": 120, "y": 120, "scale": 1 },
+      "graniteOptions": [
+         "graniteColors/graniteColorOne.jpg",
+         "graniteColors/graniteoption2.jpg"
+      ],
+      "selectedGranite": "graniteColors/graniteoption2.jpg",
+      "tileScale": 0.35
+    }
+  ]
+}

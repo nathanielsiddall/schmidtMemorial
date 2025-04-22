@@ -1,0 +1,27 @@
+[
+  {
+    "command": "moveTo",
+    "x": 40,
+    "y": 80
+  },
+  {
+    "command": "quadraticCurveTo",
+    "x": 160,
+    "y": 80,
+    "cpx": 100,
+    "cpy": 20
+  },
+  {
+    "command": "lineTo",
+    "x": 160,
+    "y": 280
+  },
+  {
+    "command": "lineTo",
+    "x": 40,
+    "y": 280
+  },
+  {
+    "command": "closePath"
+  }
+]
