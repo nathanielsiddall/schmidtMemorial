@@ -1,3 +1,4 @@
+// src/components/ImageManager.js
 import React from 'react';
 
 export default function ImageManager({
@@ -37,8 +38,8 @@ export default function ImageManager({
                             <label>Size:</label>
                             <input
                                 type="range"
-                                min="0.5"
-                                max="3"
+                                min="0.01"
+                                max="2"
                                 step="0.01"
                                 value={img.scale}
                                 onChange={e => onScaleChange(img.id, Number(e.target.value))}
