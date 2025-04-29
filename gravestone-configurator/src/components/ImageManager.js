@@ -18,9 +18,9 @@ export default function ImageManager({
             {images.map(img => (
                 <div key={img.id} style={{ border: '1px solid #ddd', padding: 5, margin: '8px 0' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis' }}>
-              {img.name}
-            </span>
+                        <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                            {img.name}
+                        </span>
                         <button onClick={() => onRemoveImage(img.id)}>×</button>
                     </div>
                     <div style={{ marginTop: 6, display: 'flex', gap: 4 }}>
@@ -38,8 +38,8 @@ export default function ImageManager({
                             <label>Size:</label>
                             <input
                                 type="range"
-                                min="0.01"
-                                max="2"
+                                min="0.5"
+                                max="3"
                                 step="0.01"
                                 value={img.scale}
                                 onChange={e => onScaleChange(img.id, Number(e.target.value))}

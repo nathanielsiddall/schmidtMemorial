@@ -1,32 +1,26 @@
 // src/pages/DesignPage.js
-import React, { useRef } from 'react';
-import DesignCanvas from '../components/DesignCanvas';
-import LeftDrawer from '../components/LeftDrawer';
+import React from 'react';
+import DesignCanvas   from '../components/DesignCanvas';
+import LeftDrawer     from '../components/LeftDrawer';
 import useDesignOptions from '../hooks/useDesignOptions';
-import useTextFields from '../hooks/useTextFields';
-import useImageManager from '../hooks/useImageManager';
-import usePDFExport from '../hooks/usePDFExport';
+import useTextFields    from '../hooks/useTextFields';
+import useImageManager  from '../hooks/useImageManager';
+import usePDFExport     from '../hooks/usePDFExport';
 
 export default function DesignPage() {
-    // ref for the SVG path node
-    const svgRef = useRef();
-    // get design + svg state & setters
+    // design + svg
     const {
         designOptions,
         selectedDesign,
         graniteImg,
-        svgScale,
-        svgX,
-        svgY,
-        setSvgScale,
-        setSvgX,
-        setSvgY,
+        svgScale, svgX, svgY,
         handleDesignSelect,
         handleGraniteSelect,
-        handleTileScaleChange
+        handleTileScaleChange,
+        setSvgScale, setSvgX, setSvgY
     } = useDesignOptions();
 
-    // text fields (pass svgRef + transforms so new text centers correctly)
+    // text fields
     const {
         texts,
         addTextField,
@@ -37,26 +31,17 @@ export default function DesignPage() {
         handleTextDblClick,
         selectedTextNode,
         textTransformerRef
-    } = useTextFields(svgRef, svgScale, svgX, svgY);
+    } = useTextFields(/* pass */ React.useRef(), svgScale, svgX, svgY);
 
-    // image manager
+    // images + crop
     const {
-        images,
-        cropping,
-        cropRect,
-        onUpload,
-        onDragEnd,
-        onRemove,
-        onScaleChange,
-        onStartCrop,
-        onCropChange,
-        onApplyCrop,
-        onCancelCrop,
-        cropTransformerRef,
-        cropRectRef
+        images, cropping, cropRect,
+        onUpload, onDragEnd, onRemove, onScaleChange,
+        onStartCrop, onCropChange, onApplyCrop, onCancelCrop,
+        cropTransformerRef, cropRectRef
     } = useImageManager();
 
-    // PDF export (gets stageRef)
+    // PDF export
     const { stageRef, onExport } = usePDFExport(textTransformerRef, React.useRef());
 
     return (
@@ -73,8 +58,6 @@ export default function DesignPage() {
                 handleTextFieldChange={handleTextFieldChange}
                 handleRemoveText={handleRemoveText}
 
-                handleExport={onExport}
-
                 images={images}
                 cropping={cropping}
                 handleImageUpload={onUpload}
@@ -83,15 +66,11 @@ export default function DesignPage() {
                 handleApplyCrop={onApplyCrop}
                 handleCancelCrop={onCancelCrop}
                 handleImageScaleChange={onScaleChange}
+
+                handleExport={onExport}
             />
 
             <DesignCanvas
-                svgRef={svgRef}
-                stageRef={stageRef}
-                setSvgScale={setSvgScale}
-                setSvgX={setSvgX}
-                setSvgY={setSvgY}
-
                 selectedDesign={selectedDesign}
                 graniteImg={graniteImg}
                 svgScale={svgScale}
@@ -115,6 +94,7 @@ export default function DesignPage() {
 
                 selectedTextNode={selectedTextNode}
                 textTransformerRef={textTransformerRef}
+                stageRef={stageRef}
             />
         </>
     );

@@ -1,7 +1,7 @@
 // src/hooks/useTextFields.js
 import { useState, useRef, useEffect } from 'react';
 
-// counter outside hook so it persists across re‑renders
+// counter outside hook so it persists across re-renders
 let textIdCounter = 0;
 
 export default function useTextFields(svgRef, svgScale, svgX, svgY) {
@@ -54,7 +54,7 @@ export default function useTextFields(svgRef, svgScale, svgX, svgY) {
         selectedTextNode.current = node;
     };
 
-    // whenever selectedTextNode changes, re‑attach transformer
+    // whenever selectedTextNode changes, re-attach transformer
     useEffect(() => {
         if (selectedTextNode.current && textTransformerRef.current) {
             textTransformerRef.current
