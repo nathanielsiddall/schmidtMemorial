@@ -1,3 +1,4 @@
+// src/utils/ImageLoader.js
 class ImageLoader {
     static load(url) {
         return new Promise((resolve, reject) => {

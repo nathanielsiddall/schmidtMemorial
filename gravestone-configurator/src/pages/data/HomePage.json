@@ -1,0 +1,106 @@
+{
+  "contactInfo": {
+    "businessName": "Monuvita Granite",
+    "contactPerson": "Shiela",
+    "addressLine1": "1305 N Frazier",
+    "cityStateZip": "Conroe, TX 77301",
+    "email": "schmidtmemorials@gmail.com",
+    "phone": "936-760-2805",
+    "altPhone": "844-760-2805",
+    "fax": "936-539-1083",
+    "businessHours": {
+      "MondayFriday": "8:00 am - 5:00 pm",
+      "Saturday": "9:00 am - 1:00 pm",
+      "Sunday": "Closed"
+    },
+    "tagline": "Se Habla Español!"
+  },
+  "infoSections": [
+    {
+      "title": "Rooted in Tradition, Built on Excellence",
+      "content": "Family-owned and operated, Monuvita Granite is committed to delivering memorials of unmatched quality. We guide you with care, experience, and personal attention, making sure every detail reflects your loved one’s story.",
+      "img": "https://placehold.co/500x300",
+      "alt": "Who We Are"
+    },
+    {
+      "title": "Memorials Made Personal",
+      "content": "Every life is unique. We offer granite headstones, bronze markers, cremation urns, benches, and custom laser etchings, crafted to match each family's wishes.",
+      "img": "https://placehold.co/500x300",
+      "alt": "What We Do"
+    },
+    {
+      "title": "Serving Conroe and Beyond",
+      "content": "Monuvita Granite proudly serves Conroe, Montgomery County, and the surrounding region with memorials delivered directly to cemeteries or private locations with full service and support.",
+      "img": "https://placehold.co/500x300",
+      "alt": "Where We Serve"
+    },
+    {
+      "title": "Here When You Need Us",
+      "content": "Whether you're planning ahead or handling immediate needs, Monuvita Granite offers prompt consultations, design services, and expert guidance whenever you need it most.",
+      "img": "https://placehold.co/500x300",
+      "alt": "When to Call"
+    },
+    {
+      "title": "Crafting Legacies That Endure",
+      "content": "At Monuvita Granite, we believe a memorial is more than stone — it’s a lasting legacy. We honor that responsibility with precision, passion, and an unwavering respect for the families we serve.",
+      "img": "https://placehold.co/500x300",
+      "alt": "Why Choose Us"
+    }
+  ],
+  "productCards": [
+    {
+      "title": "Granite Headstones",
+      "description": "Craft timeless tributes with our custom granite headstones, offering unmatched durability and elegant design to honor your loved one's memory for generations to come.",
+      "img": "https://placehold.co/400x300",
+      "alt": "Granite Headstones"
+    },
+    {
+      "title": "Granite Grave Markers",
+      "description": "Choose from a variety of granite grave markers, designed for lasting beauty and resilience, perfectly suited for cemeteries and private memorial gardens.",
+      "img": "https://placehold.co/400x300",
+      "alt": "Granite Grave Markers"
+    },
+    {
+      "title": "Bronze Grave Markers",
+      "description": "Our premium bronze grave markers combine classic artistry and modern craftsmanship, offering an elegant way to commemorate lives well lived.",
+      "img": "https://placehold.co/400x300",
+      "alt": "Bronze Grave Markers"
+    },
+    {
+      "title": "Memorial Benches",
+      "description": "We offer straight-leg and pedestal-style memorial benches—perfect for cemeteries, gardens, or private properties—crafted for beauty and enduring strength.",
+      "img": "https://placehold.co/400x300",
+      "alt": "Memorial Benches"
+    },
+    {
+      "title": "Custom Laser-Etched Portraits",
+      "description": "Preserve cherished images with precision laser-etched portraits and custom artwork, adding a personal touch that brings each memorial to life.",
+      "img": "https://placehold.co/400x300",
+      "alt": "Custom Laser Etched Portraits"
+    },
+    {
+      "title": "Cremation Urns",
+      "description": "Our individualized cremation urns — for humans and pets alike — are available in a wide variety of styles and materials to reflect dignity, remembrance, and love.",
+      "img": "https://placehold.co/400x300",
+      "alt": "Cremation Urns"
+    },
+    {
+      "title": "Porcelain Memorial Photos",
+      "description": "Our porcelain cameos and memorial photos bring faces and memories into vivid permanence, a beautiful detail that personalizes any headstone or marker.",
+      "img": "https://placehold.co/400x300",
+      "alt": "Porcelain Memorial Photos"
+    },
+    {
+      "title": "On-Site Final Date Engraving",
+      "description": "We offer on-site final date engraving, ensuring seamless, respectful updates to existing memorials without needing to remove the stone from its resting place.",
+      "img": "https://placehold.co/400x300",
+      "alt": "On-Site Engraving Services"
+    },
+    {
+      "title": "Custom Outdoor Memorial Stones",
+      "description": "Create unique outdoor memorials with custom stones designed for private property, gardens, churches, and public spaces to honor lives meaningfully and beautifully.",
+      "img": "https://placehold.co/400x300",
+      "alt": "Custom Outdoor Memorial Stones"
+    }
+  ]
+}

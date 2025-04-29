@@ -1,0 +1,331 @@
+/* Container */
+.brochure-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    font-family: 'Times New Roman', serif;
+    color: #333;
+    background-color: #fafafa;
+}
+
+.brochure-container > * + * {
+    margin-top: 3rem;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section h1 {
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.hero-section p {
+    margin-top: 0.75rem;
+    font-size: 1.125rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Info Sections (Wide Alternating Cards) */
+.info-section {
+    position: relative;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.info-bg {
+    position: absolute;
+    inset: 0;
+    background: #287066;
+    opacity: 0.15;
+    border-radius: 0.5rem;
+    z-index: -1;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+    .info-content {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+/* Normal Layout: Image Left, Text Right */
+.normal-layout .info-content {
+    flex-direction: row;
+}
+
+/* Reverse Layout: Image Right, Text Left */
+.reverse-layout .info-content {
+    flex-direction: row-reverse;
+}
+
+.info-content img {
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .info-content img {
+        width: 50%;
+    }
+}
+
+.info-content .text {
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .normal-layout .text {
+        margin-left: 1.5rem;
+        margin-top: 0;
+    }
+    .reverse-layout .text {
+        margin-right: 1.5rem;
+        margin-top: 0;
+    }
+}
+
+.text h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.text p {
+    margin-top: 0.5rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Products Section */
+.products-section {
+    text-align: center;
+}
+
+.products-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.product-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 2rem;
+}
+
+.product-card {
+    position: relative;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 0.5rem;
+    height: auto;
+}
+
+.product-card h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #222;
+}
+
+.product-card p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.product-bg {
+    position: absolute;
+    inset: 0;
+    background: #287066;
+    opacity: 0.1;
+    border-radius: 0.5rem;
+    z-index: -1;
+}
+
+/* Map Section */
+.map-section {
+    text-align: center;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.map-section h2 {
+    font-size: 1.875rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.map-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.map-section p {
+    margin-top: 1rem;
+}
+
+.map-section a {
+    color: #1f4e79;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.map-section a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Card */
+.contact-card {
+    background: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.contact-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-card h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.contact-card p {
+    margin-top: 0.5rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.contact-details p,
+.contact-details a {
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-details a {
+    text-decoration: none;
+    color: #1f4e79;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.contact-details strong {
+    font-weight: 600;
+}
+
+.contact-details h3 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    color: #222;
+}
+
+@media (min-width: 768px) {
+    .contact-details {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    .address, .phones, .hours {
+        flex: 1;
+    }
+}
+
+/* ---------------------------------------------- */
+/* Mobile-specific overrides for info-sections */
+/* ---------------------------------------------- */
+@media (max-width: 767px) {
+    /* Turn each info section into its own full-width card */
+    .info-section {
+        background: #fff;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Stack image above text and center everything */
+    .info-section .info-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Full-width card image */
+    .info-section .info-content img {
+        width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Hide the tinted background layer */
+    .info-bg {
+        display: none;
+    }
+}

@@ -22,7 +22,7 @@ export default function usePDFExport(textTransformerRef, selectedTextNodeRef) {
         pdf.addImage(dataURL, 'PNG', 0, 0, w, h);
         pdf.save('canvas.pdf');
 
-        // re‑attach selector
+        // re-attach selector
         if (selectedTextNodeRef.current && textTransformerRef.current) {
             textTransformerRef.current
                 .nodes([selectedTextNodeRef.current])
